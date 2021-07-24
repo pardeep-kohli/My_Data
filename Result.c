@@ -1,46 +1,71 @@
 #include <stdio.h>
 int main()
 {
-    int less, many;
-    float sub1, sub2, sub3, sub4, sub5, sub6;
-    printf("How Many Subject Do You Have? : ");
-    scanf("%d", &many);
-    if (many > 0)
+    int less, many, again;
+    float mark1, mark2, mark3, mark4, mark5, mark6;
+    char sub1[20], sub2[20], sub3[20], sub4[20], sub5[20], sub6[20], sub7[20];
+    do
     {
-        printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
-        scanf("%f", &sub1);
-        many--;
-    }
-    if (many > 0)
-    {
-        printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
-        scanf("%f", &sub1);
-        many--;
-    }
-    if (many > 0)
-    {
-        printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
-        scanf("%f", &sub1);
-        many--;
-    }
-    if (many > 0)
-    {
-        printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
-        scanf("%f", &sub1);
-        many--;
-    }
-    if (many > 0)
-    {
-        printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
-        scanf("%f", &sub1);
-        many--;
-    }
-    if (many > 0)
-    {
-        printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
-        scanf("%f", &sub1);
-        many--;
-    }
+        printf("How Many Subjects Do You Have? : ");
+        scanf("%d", &many);
+        less = many;
+        if (many > 0)
+        {
+            printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
+            scanf("%s %f", &sub1, &mark1);
+            many--;
+        }
+        if (many > 0)
+        {
+            printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
+            scanf("%s %f", &sub2, &mark2);
+            many--;
+        }
+        if (many > 0)
+        {
+            printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
+            scanf("%s %f", &sub3, &mark3);
+            many--;
+        }
+        if (many > 0)
+        {
+            printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
+            scanf("%s %f", &sub4, &mark4);
+            many--;
+        }
+        if (many > 0)
+        {
+            printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
+            scanf("%s %f", &sub5, &mark5);
+            many--;
+        }
+        if (many > 0)
+        {
+            printf("Enter Your Subject with Mark( Eg. Hindi 40) : ");
+            scanf("%s %f", &sub6, &mark6);
+            many--;
+        }
+        do
+        {
+            printf("Are You Sure Above Details Are Correct(y=1/n=0) : ");
+            scanf("%d", &again);
+            if (again == 1)
+            {
+            }
+            else if (again == 0)
+            {
+                mark1 = 0, mark2 = 0, mark3 = 0, mark4 = 0, mark5 = 0, mark6 = 0;
+                continue;
+            }
+            else
+            {
+                printf("Invalid Input!, Please Enter the Correct Value\n");
+            }
+        } while (again != 1 && again != 0);
+    } while (again != 1);
+    float total = mark1 + mark2 + mark3 + mark4 + mark5 + mark6;
+    float percentage = (100 * total) / (less * 100);
+
 
     return 0;
 }
