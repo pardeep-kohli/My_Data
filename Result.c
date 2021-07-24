@@ -1,9 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int less, many, again;
+    int less, many, again, Enrollment;
     float mark1, mark2, mark3, mark4, mark5, mark6;
     char sub1[20], sub2[20], sub3[20], sub4[20], sub5[20], sub6[20], sub7[20];
+    char Name[20];
+    printf("Enter You Name           : ");
+    scanf("%s", &Name);
+    printf("Enter You Enrollment No. : ");
+    scanf("%d", &Enrollment);
     do
     {
         printf("How Many Subjects Do You Have? : ");
@@ -65,7 +70,13 @@ int main()
     } while (again != 1);
     float total = mark1 + mark2 + mark3 + mark4 + mark5 + mark6;
     float percentage = (100 * total) / (less * 100);
-
+    printf("+====================================+\n");
+    printf("| NAME          :  | %s           \n", Name);
+    printf("+====================================+\n");
+    printf("| ENROLLMENT    :  | %d     \n", Enrollment);
+    printf("+====================================+\n");
+    printf("| STATUS        :  | ENROLLMEN         \n");
+    printf("+====================================+\n");
 
     return 0;
 }
