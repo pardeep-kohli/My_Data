@@ -108,7 +108,7 @@ int main()
     printf("+====================================+\n");
     printf("| PERCENTAGE    :  | %f/%d \n",total,(less*100));
     printf("+====================================+\n");
-    printf("| PERCENTAGE    :  | %.1f %\n",percentage);
+    printf("| TOTAL         :  | %.1f %\n",percentage);
     printf("+====================================+\n");
 
     return 0;
