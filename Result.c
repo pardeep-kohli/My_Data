@@ -4,6 +4,7 @@ int main()
     int less, many, again, Enrollment;
     float mark1, mark2, mark3, mark4, mark5, mark6;
     char sub1[20], sub2[20], sub3[20], sub4[20], sub5[20], sub6[20], sub7[20];
+    char status1[4];
     char Name[20];
     printf("Enter You Name           : ");
     scanf("%s", &Name);
@@ -75,7 +76,39 @@ int main()
     printf("+====================================+\n");
     printf("| ENROLLMENT    :  | %d     \n", Enrollment);
     printf("+====================================+\n");
-    printf("| STATUS        :  | ENROLLMEN         \n");
+    printf("| STATUS        :  | ");
+    if (mark1 < 33 && mark1 >=1)
+    {
+        printf("FAIL\n");
+    }
+    else if (mark2 < 33 && mark2 >=1)
+    {
+        printf("FAIL\n");
+    }
+    else if (mark3 < 33 && mark3 >=1)
+    {
+        printf("FAIL\n");
+    }
+    else if (mark4 < 33 && mark4 >=1)
+    {
+        printf("FAIL\n");
+    }
+    else if (mark5 < 33 && mark5 >=1)
+    {
+        printf("FAIL\n");
+    }
+    else if (mark6 < 33 && mark6 >=1)
+    {
+        printf("FAIL\n");
+    }
+    else
+    {
+        printf("PASS\n");
+    }
+    printf("+====================================+\n");
+    printf("| PERCENTAGE    :  | %f/%d \n",total,(less*100));
+    printf("+====================================+\n");
+    printf("| PERCENTAGE    :  | %.1f %\n",percentage);
     printf("+====================================+\n");
 
     return 0;
