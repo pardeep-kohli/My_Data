@@ -2,7 +2,8 @@
 int main()
 {
     int less, many, again, Enrollment;
-    float mark1, mark2, mark3, mark4, mark5, mark6;
+    int fail1, fail2, fail3, fail4, fail5, fail6, fail;
+    float mark1, mark2, mark3, mark4, mark5, mark6, total;
     char sub1[20], sub2[20], sub3[20], sub4[20], sub5[20], sub6[20], sub7[20];
     char status1[4];
     char Name[20];
@@ -70,40 +71,40 @@ int main()
             }
         } while (again != 1 && again != 0);
     } while (again != 1);
-    float total = mark1 + mark2 + mark3 + mark4 + mark5 + mark6;
+    total = mark1 + mark2 + mark3 + mark4 + mark5 + mark6;
     float percentage = (100 * total) / (less * 100);
     printf("+====================================+\n");
     printf("| NAME          :  | %s           \n", Name);
     printf("+====================================+\n");
-    printf("| ENROLLMENT    :  | %d     \n", Enrollment);
+    printf("| ENROLLMENT NO :  | %d     \n", Enrollment);
     printf("+====================================+\n");
     printf("| STATUS        :  | ");
-    if (mark1 < 33 && mark1 >=1)
+    if (mark1 < 33 && mark1 >= 1)
     {
         printf("FAIL\n");
         system("color 4");
     }
-    else if (mark2 < 33 && mark2 >=1)
+    else if (mark2 < 33 && mark2 >= 1)
     {
         printf("FAIL\n");
         system("color 4");
     }
-    else if (mark3 < 33 && mark3 >=1)
+    else if (mark3 < 33 && mark3 >= 1)
     {
         printf("FAIL\n");
         system("color 4");
     }
-    else if (mark4 < 33 && mark4 >=1)
+    else if (mark4 < 33 && mark4 >= 1)
     {
         printf("FAIL\n");
         system("color 4");
     }
-    else if (mark5 < 33 && mark5 >=1)
+    else if (mark5 < 33 && mark5 >= 1)
     {
         printf("FAIL\n");
         system("color 4");
     }
-    else if (mark6 < 33 && mark6 >=1)
+    else if (mark6 < 33 && mark6 >= 1)
     {
         printf("FAIL\n");
         system("color 4");
@@ -114,9 +115,57 @@ int main()
         system("color f5");
     }
     printf("+====================================+\n");
-    printf("| TOTAL         :  | %.0f/%d \n",total,(less*100));
+    printf("| TOTAL         :  | %.0f/%d \n", total, (less * 100));
     printf("+====================================+\n");
-    printf("| PERCENTAGE    :  | %.1f %\n",percentage);
+    printf("| PERCENTAGE    :  | %.1f %\n", percentage);
     printf("+====================================+\n");
+    printf("FAIL ON : ");
+    if (mark1 < 33 && mark1 >= 1)
+    {
+        printf("%s, ", sub1);
+        fail = 1;
+    }
+    if (mark2 < 33 && mark2 >= 1)
+    {
+        printf("%s, ", sub2);
+        fail = 1;
+    }
+    if (mark3 < 33 && mark3 >= 1)
+    {
+        printf("%s, ", sub3);
+        fail = 1;
+    }
+    if (mark4 < 33 && mark4 >= 1)
+    {
+        printf("%s, ", sub4);
+        fail = 1;
+    }
+    if (mark5 < 33 && mark5 >= 1)
+    {
+        printf("%s, ", sub5);
+        fail = 1;
+    }
+    if (mark6 < 33 && mark6 >= 1)
+    {
+        printf("%s\n", sub6);
+        fail = 1;
+    }
+    if (fail == 1)
+    {
+        printf("\n");
+    }
+    else
+    {
+        printf("None;\n");
+        fail = 2;
+    }
+    if (fail == 2)
+    {
+        printf("Congratulation %s! you achieved %.1f percent marks in this Exam.\n",Name,percentage);
+    }
+    else
+    {
+        printf("Well Try, Try Again for Next Year!\n");
+    }
     return 0;
 }
