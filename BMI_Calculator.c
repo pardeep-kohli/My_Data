@@ -3,6 +3,8 @@ int main()
 {
     
     float feet, weight, bmi,sim, emergency;
+    float feet, weight, bmi,sim, emergency;
+    float feet, weight, bmi,sim, emergency;
     char repeat[68];
     do{
     printf("\nEnter Your Height(In Feet): ");

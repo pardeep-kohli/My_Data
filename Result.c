@@ -8,6 +8,7 @@ int main()
     char sub1[20], sub2[20], sub3[20], sub4[20], sub5[20], sub6[20], sub7[20];
     char status1[4];
     char Name[20];
+    system("color 2");
     printf("Enter You Name           : ");
     scanf("%s", &Name);
     printf("Enter You Enrollment No. : ");
@@ -82,30 +83,37 @@ int main()
     if (mark1 < 33 && mark1 >= 1)
     {
         printf("FAIL\n");
+        system("color 4");
     }
     else if (mark2 < 33 && mark2 >= 1)
     {
         printf("FAIL\n");
+        system("color 4");
     }
     else if (mark3 < 33 && mark3 >= 1)
     {
         printf("FAIL\n");
+        system("color 4");
     }
     else if (mark4 < 33 && mark4 >= 1)
     {
         printf("FAIL\n");
+        system("color 4");
     }
     else if (mark5 < 33 && mark5 >= 1)
     {
         printf("FAIL\n");
+        system("color 4");
     }
     else if (mark6 < 33 && mark6 >= 1)
     {
         printf("FAIL\n");
+        system("color 4");
     }
     else
     {
         printf("PASS\n");
+        system("color f5");
     }
     printf("+====================================+\n");
     printf("| TOTAL         :  | %.0f/%d \n", total, (less * 100));
