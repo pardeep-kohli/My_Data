@@ -12,5 +12,5 @@ int main()
     printf("Enter a number:");
     scanf("%d",&num);
     printf("Multiplication Table of %d is:",num);
-    MultiplicationTable(num, 1);
+    MultiplicationTable(num, 1); 
 }
