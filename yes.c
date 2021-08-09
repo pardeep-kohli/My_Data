@@ -16,5 +16,4 @@ int table (int n, int b){
 r = table(n,b+1);
       return r;
     }
-
 }
