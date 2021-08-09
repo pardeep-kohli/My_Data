@@ -8,6 +8,9 @@ int main()
     table (num,1);
 
 }
+
+
+
 int table (int n, int b){
     printf("\n");
      printf("%d X %d = %d",n,b,n*b);
