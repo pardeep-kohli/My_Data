@@ -12,8 +12,8 @@ int table (int n, int b){
     printf("\n");
      printf("%d X %d = %d",n,b,n*b);
     if(b<10){
-      int r = table(n,b+1);
+      int r;
+r = table(n,b+1);
       return r;
     }
-
 }
